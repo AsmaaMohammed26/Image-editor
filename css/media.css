@@ -1,0 +1,18 @@
+@media screen and (max-width: 660px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  img,
+  canvas {
+    max-width: 70vw;
+    max-height: 70vh;
+  }
+}
+
+.mode {
+  --bgColor: #2b2929;
+  background-color: var(--bgColor);
+}

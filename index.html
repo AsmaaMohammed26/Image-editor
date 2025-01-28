@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-editor</title>
+
+    <!-- css files -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css">
+  </head>
+  <body>
+    <div id="mode">
+      <span id="turn"></span>
+    </div>
+    <h1>Edit Your Image</h1>
+    <div class="container">
+      <div class="img-container">
+        <div class="img">
+          <img src="" id="img" />
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="upload">
+          <label for="upload">Upload</label>
+          <input type="file" name="" id="upload" />
+        </div>
+      </div>
+      <div class="filters-container">
+        <div class="filter">
+          <label for="blur">blur</label>
+          <input type="range" min="0" max="20" value="0" id="blur" />
+        </div>
+        <div class="filter">
+          <label for="brightness">brightness</label>
+          <input type="range" min="0" max="200" value="100" id="brightness" />
+        </div>
+        <div class="filter">
+          <label for="contrast">contrast</label>
+          <input type="range" min="0" max="300" value="100" id="contrast" />
+        </div>
+        <div class="filter">
+          <label for="grayscale">grayscale</label>
+          <input
+            type="range"
+            step="0.1"
+            min="0"
+            max="1"
+            value="0"
+            id="grayscale"
+          />
+        </div>
+        <div class="filter">
+          <label for="hue-rotate">hue-rotate</label>
+          <input type="range" min="0" max="360" value="0" id="hue-rotate" />
+        </div>
+        <div class="filter">
+          <label for="invert">invert</label>
+          <input type="range" min="0" max="100" value="0" id="invert" />
+        </div>
+        <div class="filter">
+          <label for="saturate">saturate</label>
+          <input type="range" min="0" max="300" value="100" id="saturate" />
+        </div>
+        <div class="filter">
+          <label for="sepia">sepia</label>
+          <input type="range" min="0" max="100" value="0" id="sepia" />
+        </div>
+        <div class="button-container">
+          <button id="reset">Reset</button>
+          <a download="image" id="download">Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- js files -->
+    <script src="./js/script.js"></script>
+    <script src="./js/mode.js"></script>
+  </body>
+</html>
